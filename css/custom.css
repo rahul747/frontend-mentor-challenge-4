@@ -16,6 +16,7 @@ body {
 main {
 	max-width: 1060px;
 	margin: 20px auto;
+	background: url('../images/bg-desktop.svg')no-repeat center center/cover;
 }
 
 .logo {
@@ -72,6 +73,7 @@ a {
 	padding: 11px 28px;
 	border-radius: 50px;
 	box-shadow: 0px 3px 6px #333;
+	outline: none;
 }
 
 .social-icon {
@@ -95,7 +97,16 @@ a {
 	border: 1px solid #fff;
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
+
+	main {
+		background-image: url('../images/bg-mobile.svg');
+		background-position: top 150px 50px;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
 	.flex-box img {
 		width: 290px;
 		margin: 0 12px 0 34px;
